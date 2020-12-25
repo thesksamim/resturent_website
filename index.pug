@@ -1,0 +1,55 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul
+        div#logo
+          img(src="/static/logo.png", alt="")
+          | SDA
+
+        li #[a(href = "/") Home]
+        li #[a(href = "/") About]
+        li #[a(href = "/") Services]
+        li #[a(href = "/contact") Contact us ]
+
+    section#introsection
+      div welcome to my dance academy
+      div.small eat sleep Dance Repeat
+    section#missionsection
+      h3 our mission
+      div.card
+        h4 dance perfection
+        div.card-box
+          div.card-img
+            img(src="/static/dancing1.png", alt="")
+
+      div.card
+        h4 Dance the way u like
+        div.card-box
+          div.card-img
+            img(src="/static/dancing2.png", alt="")
+
+      div.card
+        h4 Expert Teaching
+        div.card-box
+          div.card-img
+            img(src="/static/dancing3.png", alt="")
+
+    section#sponsersection
+      h2 Our sponsers
+      div#sponsors
+        img(src="static/apple.png", alt="", class = "sp-img")
+        img(src="static/amazon.png", alt="", class = "sp-img")
+        img(src="static/facebook.png", alt="", class = "sp-img")
+        
+    footer#footer
+      | Copyright 2020 . All rights reserved
+    
+
+       
+    
+    script
+      include ../static/index.js
